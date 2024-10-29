@@ -206,5 +206,5 @@ class AddNewContact10LocatorsPage:
     click_contact10_submit_button = (By.ID, "submit")
 
 
-class LogOutButtonLocatorPage:
+class LogOutButtonLocatorsPage:
     click_logout_button = (By.ID, "logout")

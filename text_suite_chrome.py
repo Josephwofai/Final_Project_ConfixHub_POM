@@ -1,7 +1,17 @@
 import pytest
 from selenium import webdriver
 from ActionPage.ActionsPage import (InvalidLoginActionsPage, ValidLoginActionsPage,
-                                    ClickAddNewContact1ActionsPage, AddNewContact1ActionsPage)
+                                    ClickAddNewContact1ActionsPage, AddNewContact1ActionsPage,
+                                    ClickAddNewContact2ActionsPage, AddNewContact2ActionsPage,
+                                    ClickAddNewContact3ActionsPage, AddNewContact3ActionsPage,
+                                    ClickAddNewContact4ActionsPage, AddNewContact4ActionsPage,
+                                    ClickAddNewContact5ActionsPage, AddNewContact5ActionsPage,
+                                    ClickAddNewContact6ActionsPage, AddNewContact6ActionsPage,
+                                    ClickAddNewContact7ActionsPage, AddNewContact7ActionsPage,
+                                    ClickAddNewContact8ActionsPage, AddNewContact8ActionsPage,
+                                    ClickAddNewContact9ActionsPage, AddNewContact9ActionsPage,
+                                    ClickAddNewContact10ActionsPage, AddNewContact10ActionsPage,
+                                    LogOutButtonActionsPage)
 
 
 @pytest.fixture(scope="module")
@@ -36,15 +46,16 @@ def test_invalid_login_credentials(login):
 
 
 def test_valid_login_credentials(login1):
-    login1.enter_invalid_username("123QQQ@gmail.com")
-    login1.enter_invalid_password("12345aaaaa")
+    login1.enter_valid_username("123QQQ@gmail.com")
+    login1.enter_valid_password("12345aaaaa")
     login1.click_submit_button()
+
 
 def test_add_new_contact1_button(login1):
     addnewcontact1 = ClickAddNewContact1ActionsPage(login1.driver)
     addnewcontact1.click_add_new_contact1_button()
 
-def test_add_new_contact1_info(login1)
+
+def test_add_new_contact1_info(login1):
     contact1_info = AddNewContact1ActionsPage(login1.driver)
     contact1_info.enter_contact1_first_name("Paul")
-
