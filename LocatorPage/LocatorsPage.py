@@ -12,7 +12,7 @@ class InvalidLoginLocatorsPage:
 class ValidLoginLocatorsPage:
     enter_username = (By.ID, "email")
     enter_password = (By.ID, "password")
-    click_submit_button = (By.ID, "submit")
+    click_submit_button1 = (By.ID, "submit")
 
 
 # Validate user can click on new customer

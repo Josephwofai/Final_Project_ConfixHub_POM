@@ -1,7 +1,6 @@
 import time
 
 from selenium.webdriver.support.wait import WebDriverWait
-
 from selenium.webdriver.support import expected_conditions as EC
 
 from LocatorPage.LocatorsPage import (InvalidLoginLocatorsPage, ValidLoginLocatorsPage,
@@ -25,16 +24,16 @@ class InvalidLoginActionsPage:
     def login_url(self, url):
         self.driver.get(url)
 
-    def enter_invalid_username(self, name):
+    def enter_invalid_username(self, invalid_name):
         enter_invalid_username = WebDriverWait(self.driver, 10).until(
             EC.presence_of_element_located(InvalidLoginLocatorsPage.enter_invalid_username))
-        enter_invalid_username.send_keys(name)
+        enter_invalid_username.send_keys(invalid_name)
         time.sleep(3)
 
-    def enter_invalid_password(self, word):
+    def enter_invalid_password(self, invalid_word):
         enter_invalid_password = WebDriverWait(self.driver, 10).until(
             EC.presence_of_element_located(InvalidLoginLocatorsPage.enter_invalid_password))
-        enter_invalid_password.send_keys(word)
+        enter_invalid_password.send_keys(invalid_word)
         time.sleep(3)
 
     def click_submit_button(self):
@@ -45,29 +44,28 @@ class InvalidLoginActionsPage:
 
 
 class ValidLoginActionsPage:
-
     def __init__(self, driver):
         self.driver = driver
 
-    def login_url(self, url):
+    def login_url1(self, url):
         self.driver.get(url)
 
-    def enter_username(self, name):
+    def enter_username(self, email):
         enter_username = WebDriverWait(self.driver, 10).until(
             EC.presence_of_element_located(ValidLoginLocatorsPage.enter_username))
-        enter_username.send_keys(name)
-        time.sleep(3)
+        enter_username.send_keys(email)
+        time.sleep(2)
 
-    def enter_password(self, word):
+    def enter_password(self, password):
         enter_password = WebDriverWait(self.driver, 10).until(
             EC.presence_of_element_located(ValidLoginLocatorsPage.enter_password))
-        enter_password.send_keys(word)
+        enter_password.send_keys(password)
         time.sleep(3)
 
-    def click_submit_button(self):
-        click_submit_button = WebDriverWait(self.driver, 10).until(
-            EC.presence_of_element_located(ValidLoginLocatorsPage.click_submit_button))
-        click_submit_button.click()
+    def click_submit_button1(self):
+        click_submit_button1 = WebDriverWait(self.driver, 10).until(
+            EC.presence_of_element_located(ValidLoginLocatorsPage.click_submit_button1))
+        click_submit_button1.click()
         time.sleep(3)
 
 
