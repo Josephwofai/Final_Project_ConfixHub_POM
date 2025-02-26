@@ -3,208 +3,208 @@ from selenium.webdriver.common.by import By
 
 # Validate user cannot login with invalid credentials
 class InvalidLoginLocatorsPage:
-    enter_invalid_username = (By.ID, "email")
-    enter_invalid_password = (By.ID, "password")
-    click_submit_button = (By.ID, "submit")
+    ENTER_INVALID_EMAIL = (By.ID, "email")
+    ENTER_INVALID_PASSWORD = (By.ID, "password")
+    CLICK_SUBMIT = (By.ID, "submit")
 
 
-# Validate user can login with invalid credentials
+# Validate user can login with valid credentials
 class ValidLoginLocatorsPage:
-    enter_username = (By.ID, "email")
-    enter_password = (By.ID, "password")
-    click_submit_button1 = (By.ID, "submit")
+    ENTER_VALID_EMAIL = (By.ID, "email")
+    ENTER_VALID_PASSWORD = (By.ID, "password")
+    CLICK_SUBMIT1 = (By.ID, "submit")
 
 
-# Validate user can click on new customer
+# Ensure  user can add 10 Contact(Contact 1)
 class ClickAddNewContact1LocatorsPage:
-    Click_Add_New_Contact1_Button = (By.ID, "add-contact")
+    CLICK_ADD_NEW_CONTACT1_ICON = (By.ID, "add-contact")
 
 
 class AddNewContact1LocatorsPage:
-    enter_contact1_firstname = (By.ID, "firstName")
-    enter_contact1_lastname = (By.ID, "lastName")
-    enter_contact1_birthday = (By.ID, "birthdate")
-    enter_contact1_email = (By.ID, "email")
-    enter_contact1_phone = (By.ID, "phone")
-    enter_contact1_street_address1 = (By.ID, "street1")
-    enter_contact1_street_address2 = (By.ID, "street2")
-    enter_contact1_city = (By.ID, "city")
-    enter_contact1_state = (By.ID, "stateProvince")
-    enter_contact1_postal_code = (By.ID, "postalCode")
-    enter_contact1_country = (By.ID, "country")
-    click_contact1_submit_button = (By.ID, "submit")
+    FILL_CONTACT1_FIRST_NAME = (By.ID, "firstName")
+    FILL_CONTACT1_LAST_NAME = (By.ID, "lastName")
+    FILL_CONTACT1_BIRTHDATE = (By.ID, "birthdate")
+    FILL_CONTACT1_EMAIL = (By.ID, "email")
+    FILL_CONTACT1_PHONE = (By.ID, "phone")
+    FILL_CONTACT1_STREET1 = (By.ID, "street1")
+    FILL_CONTACT1_STREET2 = (By.ID, "street2")
+    FILL_CONTACT1_CITY = (By.ID, "city")
+    FILL_CONTACT1_STATE = (By.ID, "stateProvince")
+    FILL_CONTACT1_POSTALCODE = (By.ID, "postalCode")
+    FILL_CONTACT1_COUNTRY = (By.ID, "country")
+    FILL_CONTACT1_SUBMIT = (By.ID, "submit")
 
 
 class ClickAddNewContact2LocatorsPage:
-    Click_Add_New_Contact2_Button = (By.ID, "add-contact")
+    CLICK_ADD_NEW_CONTACT2_ICON = (By.ID, "add-contact")
 
 
 class AddNewContact2LocatorsPage:
-    enter_contact2_first_name = (By.ID, "firstName")
-    enter_contact2_last_name = (By.ID, "lastName")
-    enter_contact2_birthday = (By.ID, "birthdate")
-    enter_contact2_email = (By.ID, "email")
-    enter_contact2_phone = (By.ID, "phone")
-    enter_contact2_street_address1 = (By.ID, "street1")
-    enter_contact2_street_address2 = (By.ID, "street2")
-    enter_contact2_city = (By.ID, "city")
-    enter_contact2_state = (By.ID, "stateProvince")
-    enter_contact2_postal_code = (By.ID, "postalCode")
-    enter_contact2_country = (By.ID, "country")
-    click_contact2_submit_button = (By.ID, "submit")
+    FILL_CONTACT2_FIRST_NAME = (By.ID, "firstName")
+    FILL_CONTACT2_LAST_NAME = (By.ID, "lastName")
+    FILL_CONTACT2_BIRTHDATE = (By.ID, "birthdate")
+    FILL_CONTACT2_EMAIL = (By.ID, "email")
+    FILL_CONTACT2_PHONE = (By.ID, "phone")
+    FILL_CONTACT2_STREET1 = (By.ID, "street1")
+    FILL_CONTACT2_STREET2 = (By.ID, "street2")
+    FILL_CONTACT2_CITY = (By.ID, "city")
+    FILL_CONTACT2_STATE = (By.ID, "stateProvince")
+    FILL_CONTACT2_POSTALCODE = (By.ID, "postalCode")
+    FILL_CONTACT2_COUNTRY = (By.ID, "country")
+    FILL_CONTACT2_SUBMIT = (By.ID, "submit")
 
 
 class ClickAddNewContact3LocatorsPage:
-    Click_Add_New_Contact3_Button = (By.ID, "add-contact")
+    CLICK_ADD_NEW_CONTACT3_ICON = (By.ID, "add-contact")
 
 
 class AddNewContact3LocatorsPage:
-    enter_contact3_first_name = (By.ID, "firstName")
-    enter_contact3_last_name = (By.ID, "lastName")
-    enter_contact3_birthday = (By.ID, "birthdate")
-    enter_contact3_email = (By.ID, "email")
-    enter_contact3_phone = (By.ID, "phone")
-    enter_contact3_street_address1 = (By.ID, "street1")
-    enter_contact3_street_address2 = (By.ID, "street2")
-    enter_contact3_city = (By.ID, "city")
-    enter_contact3_state = (By.ID, "stateProvince")
-    enter_contact3_postal_code = (By.ID, "postalCode")
-    enter_contact3_country = (By.ID, "country")
-    click_contact3_submit_button = (By.ID, "submit")
+    FILL_CONTACT3_FIRST_NAME = (By.ID, "firstName")
+    FILL_CONTACT3_LAST_NAME = (By.ID, "lastName")
+    FILL_CONTACT3_BIRTHDATE = (By.ID, "birthdate")
+    FILL_CONTACT3_EMAIL = (By.ID, "email")
+    FILL_CONTACT3_PHONE = (By.ID, "phone")
+    FILL_CONTACT3_STREET1 = (By.ID, "street1")
+    FILL_CONTACT3_STREET2 = (By.ID, "street2")
+    FILL_CONTACT3_CITY = (By.ID, "city")
+    FILL_CONTACT3_STATE = (By.ID, "stateProvince")
+    FILL_CONTACT3_POSTALCODE = (By.ID, "postalCode")
+    FILL_CONTACT3_COUNTRY = (By.ID, "country")
+    FILL_CONTACT3_SUBMIT = (By.ID, "submit")
 
 
 class ClickAddNewContact4LocatorsPage:
-    Click_Add_New_Contact4_Button = (By.ID, "add-contact")
+    CLICK_ADD_NEW_CONTACT4_ICON = (By.ID, "add-contact")
 
 
 class AddNewContact4LocatorsPage:
-    enter_contact4_first_name = (By.ID, "firstName")
-    enter_contact4_last_name = (By.ID, "lastName")
-    enter_contact4_birthday = (By.ID, "birthdate")
-    enter_contact4_email = (By.ID, "email")
-    enter_contact4_phone = (By.ID, "phone")
-    enter_contact4_street_address1 = (By.ID, "street1")
-    enter_contact4_street_address2 = (By.ID, "street2")
-    enter_contact4_city = (By.ID, "city")
-    enter_contact4_state = (By.ID, "stateProvince")
-    enter_contact4_postal_code = (By.ID, "postalCode")
-    enter_contact4_country = (By.ID, "country")
-    click_contact4_submit_button = (By.ID, "submit")
+    FILL_CONTACT4_FIRST_NAME = (By.ID, "firstName")
+    FILL_CONTACT4_LAST_NAME = (By.ID, "lastName")
+    FILL_CONTACT4_BIRTHDATE = (By.ID, "birthdate")
+    FILL_CONTACT4_EMAIL = (By.ID, "email")
+    FILL_CONTACT4_PHONE = (By.ID, "phone")
+    FILL_CONTACT4_STREET1 = (By.ID, "street1")
+    FILL_CONTACT4_STREET2 = (By.ID, "street2")
+    FILL_CONTACT4_CITY = (By.ID, "city")
+    FILL_CONTACT4_STATE = (By.ID, "stateProvince")
+    FILL_CONTACT4_POSTALCODE = (By.ID, "postalCode")
+    FILL_CONTACT4_COUNTRY = (By.ID, "country")
+    FILL_CONTACT4_SUBMIT = (By.ID, "submit")
 
 
 class ClickAddNewContact5LocatorsPage:
-    Click_Add_New_Contact5_Button = (By.ID, "add-contact")
+    CLICK_ADD_NEW_CONTACT5_ICON = (By.ID, "add-contact")
 
 
 class AddNewContact5LocatorsPage:
-    enter_contact5_first_name = (By.ID, "firstName")
-    enter_contact5_last_name = (By.ID, "lastName")
-    enter_contact5_birthday = (By.ID, "birthdate")
-    enter_contact5_email = (By.ID, "email")
-    enter_contact5_phone = (By.ID, "phone")
-    enter_contact5_street_address1 = (By.ID, "street1")
-    enter_contact5_street_address2 = (By.ID, "street2")
-    enter_contact5_city = (By.ID, "city")
-    enter_contact5_state = (By.ID, "stateProvince")
-    enter_contact5_postal_code = (By.ID, "postalCode")
-    enter_contact5_country = (By.ID, "country")
-    click_contact5_submit_button = (By.ID, "submit")
+    FILL_CONTACT5_FIRST_NAME = (By.ID, "firstName")
+    FILL_CONTACT5_LAST_NAME = (By.ID, "lastName")
+    FILL_CONTACT5_BIRTHDATE = (By.ID, "birthdate")
+    FILL_CONTACT5_EMAIL = (By.ID, "email")
+    FILL_CONTACT5_PHONE = (By.ID, "phone")
+    FILL_CONTACT5_STREET1 = (By.ID, "street1")
+    FILL_CONTACT5_STREET2 = (By.ID, "street2")
+    FILL_CONTACT5_CITY = (By.ID, "city")
+    FILL_CONTACT5_STATE = (By.ID, "stateProvince")
+    FILL_CONTACT5_POSTALCODE = (By.ID, "postalCode")
+    FILL_CONTACT5_COUNTRY = (By.ID, "country")
+    FILL_CONTACT5_SUBMIT = (By.ID, "submit")
 
 
 class ClickAddNewContact6LocatorsPage:
-    Click_Add_New_Contact6_Button = (By.ID, "add-contact")
+    CLICK_ADD_NEW_CONTACT6_ICON = (By.ID, "add-contact")
 
 
 class AddNewContact6LocatorsPage:
-    enter_contact6_first_name = (By.ID, "firstName")
-    enter_contact6_last_name = (By.ID, "lastName")
-    enter_contact6_birthday = (By.ID, "birthdate")
-    enter_contact6_email = (By.ID, "email")
-    enter_contact6_phone = (By.ID, "phone")
-    enter_contact6_street_address1 = (By.ID, "street1")
-    enter_contact6_street_address2 = (By.ID, "street2")
-    enter_contact6_city = (By.ID, "city")
-    enter_contact6_state = (By.ID, "stateProvince")
-    enter_contact6_postal_code = (By.ID, "postalCode")
-    enter_contact6_country = (By.ID, "country")
-    click_contact6_submit_button = (By.ID, "submit")
+    FILL_CONTACT6_FIRST_NAME = (By.ID, "firstName")
+    FILL_CONTACT6_LAST_NAME = (By.ID, "lastName")
+    FILL_CONTACT6_BIRTHDATE = (By.ID, "birthdate")
+    FILL_CONTACT6_EMAIL = (By.ID, "email")
+    FILL_CONTACT6_PHONE = (By.ID, "phone")
+    FILL_CONTACT6_STREET1 = (By.ID, "street1")
+    FILL_CONTACT6_STREET2 = (By.ID, "street2")
+    FILL_CONTACT6_CITY = (By.ID, "city")
+    FILL_CONTACT6_STATE = (By.ID, "stateProvince")
+    FILL_CONTACT6_POSTALCODE = (By.ID, "postalCode")
+    FILL_CONTACT6_COUNTRY = (By.ID, "country")
+    FILL_CONTACT6_SUBMIT = (By.ID, "submit")
 
 
 class ClickAddNewContact7LocatorsPage:
-    Click_Add_New_Contact7_Button = (By.ID, "add-contact")
+    CLICK_ADD_NEW_CONTACT7_ICON = (By.ID, "add-contact")
 
 
 class AddNewContact7LocatorsPage:
-    enter_contact7_first_name = (By.ID, "firstName")
-    enter_contact7_last_name = (By.ID, "lastName")
-    enter_contact7_birthday = (By.ID, "birthdate")
-    enter_contact7_email = (By.ID, "email")
-    enter_contact7_phone = (By.ID, "phone")
-    enter_contact7_street_address1 = (By.ID, "street1")
-    enter_contact7_street_address2 = (By.ID, "street2")
-    enter_contact7_city = (By.ID, "city")
-    enter_contact7_state = (By.ID, "stateProvince")
-    enter_contact7_postal_code = (By.ID, "postalCode")
-    enter_contact7_country = (By.ID, "country")
-    click_contact7_submit_button = (By.ID, "submit")
+    FILL_CONTACT7_FIRST_NAME = (By.ID, "firstName")
+    FILL_CONTACT7_LAST_NAME = (By.ID, "lastName")
+    FILL_CONTACT7_BIRTHDATE = (By.ID, "birthdate")
+    FILL_CONTACT7_EMAIL = (By.ID, "email")
+    FILL_CONTACT7_PHONE = (By.ID, "phone")
+    FILL_CONTACT7_STREET1 = (By.ID, "street1")
+    FILL_CONTACT7_STREET2 = (By.ID, "street2")
+    FILL_CONTACT7_CITY = (By.ID, "city")
+    FILL_CONTACT7_STATE = (By.ID, "stateProvince")
+    FILL_CONTACT7_POSTALCODE = (By.ID, "postalCode")
+    FILL_CONTACT7_COUNTRY = (By.ID, "country")
+    FILL_CONTACT7_SUBMIT = (By.ID, "submit")
 
 
 class ClickAddNewContact8LocatorsPage:
-    Click_Add_New_Contact8_Button = (By.ID, "add-contact")
+    CLICK_ADD_NEW_CONTACT8_ICON = (By.ID, "add-contact")
 
 
 class AddNewContact8LocatorsPage:
-    enter_contact8_first_name = (By.ID, "firstName")
-    enter_contact8_last_name = (By.ID, "lastName")
-    enter_contact8_birthday = (By.ID, "birthdate")
-    enter_contact8_email = (By.ID, "email")
-    enter_contact8_phone = (By.ID, "phone")
-    enter_contact8_street_address1 = (By.ID, "street1")
-    enter_contact8_street_address2 = (By.ID, "street2")
-    enter_contact8_city = (By.ID, "city")
-    enter_contact8_state = (By.ID, "stateProvince")
-    enter_contact8_postal_code = (By.ID, "postalCode")
-    enter_contact8_country = (By.ID, "country")
-    click_contact8_submit_button = (By.ID, "submit")
+    FILL_CONTACT8_FIRST_NAME = (By.ID, "firstName")
+    FILL_CONTACT8_LAST_NAME = (By.ID, "lastName")
+    FILL_CONTACT8_BIRTHDATE = (By.ID, "birthdate")
+    FILL_CONTACT8_EMAIL = (By.ID, "email")
+    FILL_CONTACT8_PHONE = (By.ID, "phone")
+    FILL_CONTACT8_STREET1 = (By.ID, "street1")
+    FILL_CONTACT8_STREET2 = (By.ID, "street2")
+    FILL_CONTACT8_CITY = (By.ID, "city")
+    FILL_CONTACT8_STATE = (By.ID, "stateProvince")
+    FILL_CONTACT8_POSTALCODE = (By.ID, "postalCode")
+    FILL_CONTACT8_COUNTRY = (By.ID, "country")
+    FILL_CONTACT8_SUBMIT = (By.ID, "submit")
 
 
 class ClickAddNewContact9LocatorsPage:
-    Click_Add_New_Contact9Button = (By.ID, "add-contact")
+    CLICK_ADD_NEW_CONTACT9_ICON = (By.ID, "add-contact")
 
 
 class AddNewContact9LocatorsPage:
-    enter_contact9_first_name = (By.ID, "firstName")
-    enter_contact9_last_name = (By.ID, "lastName")
-    enter_contact9_birthday = (By.ID, "birthdate")
-    enter_contact9_email = (By.ID, "email")
-    enter_contact9_phone = (By.ID, "phone")
-    enter_contact9_street_address1 = (By.ID, "street1")
-    enter_contact9_street_address2 = (By.ID, "street2")
-    enter_contact9_city = (By.ID, "city")
-    enter_contact9_state = (By.ID, "stateProvince")
-    enter_contact9_postal_code = (By.ID, "postalCode")
-    enter_contact9_country = (By.ID, "country")
-    click_contact9_submit_button = (By.ID, "submit")
+    FILL_CONTACT9_FIRST_NAME = (By.ID, "firstName")
+    FILL_CONTACT9_LAST_NAME = (By.ID, "lastName")
+    FILL_CONTACT9_BIRTHDATE = (By.ID, "birthdate")
+    FILL_CONTACT9_EMAIL = (By.ID, "email")
+    FILL_CONTACT9_PHONE = (By.ID, "phone")
+    FILL_CONTACT9_STREET1 = (By.ID, "street1")
+    FILL_CONTACT9_STREET2 = (By.ID, "street2")
+    FILL_CONTACT9_CITY = (By.ID, "city")
+    FILL_CONTACT9_STATE = (By.ID, "stateProvince")
+    FILL_CONTACT9_POSTALCODE = (By.ID, "postalCode")
+    FILL_CONTACT9_COUNTRY = (By.ID, "country")
+    FILL_CONTACT9_SUBMIT = (By.ID, "submit")
 
 
 class ClickAddNewContact10LocatorsPage:
-    Click_Add_New_Contact10_Button = (By.ID, "add-contact")
+    CLICK_ADD_NEW_CONTACT10_ICON = (By.ID, "add-contact")
 
 
 class AddNewContact10LocatorsPage:
-    enter_contact10_first_name = (By.ID, "firstName")
-    enter_contact10_last_name = (By.ID, "lastName")
-    enter_contact10_birthday = (By.ID, "birthdate")
-    enter_contact10_email = (By.ID, "email")
-    enter_contact10_phone = (By.ID, "phone")
-    enter_contact10_street_address1 = (By.ID, "street1")
-    enter_contact10_street_address2 = (By.ID, "street2")
-    enter_contact10_city = (By.ID, "city")
-    enter_contact10_state = (By.ID, "stateProvince")
-    enter_contact10_postal_code = (By.ID, "postalCode")
-    enter_contact10_country = (By.ID, "country")
-    click_contact10_submit_button = (By.ID, "submit")
+    FILL_CONTACT10_FIRST_NAME = (By.ID, "firstName")
+    FILL_CONTACT10_LAST_NAME = (By.ID, "lastName")
+    FILL_CONTACT10_BIRTHDATE = (By.ID, "birthdate")
+    FILL_CONTACT10_EMAIL = (By.ID, "email")
+    FILL_CONTACT10_PHONE = (By.ID, "phone")
+    FILL_CONTACT10_STREET1 = (By.ID, "street1")
+    FILL_CONTACT10_STREET2 = (By.ID, "street2")
+    FILL_CONTACT10_CITY = (By.ID, "city")
+    FILL_CONTACT10_STATE = (By.ID, "stateProvince")
+    FILL_CONTACT10_POSTALCODE = (By.ID, "postalCode")
+    FILL_CONTACT10_COUNTRY = (By.ID, "country")
+    FILL_CONTACT10_SUBMIT = (By.ID, "submit")
 
 
-class LogOutButtonLocatorsPage:
-    click_logout_button = (By.ID, "logout")
+class LogoutButtonLocationPage:
+    CLICK_LOGOUT_BUTTON = (By.ID, "logout")
