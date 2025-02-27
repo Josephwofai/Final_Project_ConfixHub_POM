@@ -1,4 +1,4 @@
-name: Python Tests
+name: Project_Contact_Web_App_12
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.8'  # Specify your Python version here
+          python-version: '3.11'  # Specify your Python version here
 
       - name: Install dependencies
         run: |
