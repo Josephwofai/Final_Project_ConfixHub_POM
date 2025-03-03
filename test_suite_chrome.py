@@ -30,7 +30,6 @@ def driver_setup():
     yield driver
     driver.quit()
 
-
 @pytest.fixture(scope="module")
 def login(driver_setup):
     driver = driver_setup
