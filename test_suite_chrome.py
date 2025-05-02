@@ -3,32 +3,21 @@ from Config.config import Config
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from ActionPage.ActionsPage import (InvalidLoginActionsPage, ValidLoginActionsPage, ClickAddNewContact1ActionsPage,
-                                    AddNewContact1ActionsPage, ClickAddNewContact2ActionsPage,
-                                    AddNewContact2ActionsPage,
-                                    ClickAddNewContact3ActionsPage, AddNewContact3ActionsPage,
-                                    ClickAddNewContact4ActionsPage,
-                                    AddNewContact4ActionsPage, ClickAddNewContact5ActionsPage,
-                                    AddNewContact5ActionsPage,
-                                    ClickAddNewContact6ActionsPage, AddNewContact6ActionsPage,
-                                    ClickAddNewContact7ActionsPage,
-                                    AddNewContact7ActionsPage, ClickAddNewContact8ActionsPage,
-                                    AddNewContact8ActionsPage,
-                                    ClickAddNewContact9ActionsPage, AddNewContact9ActionsPage,
-                                    ClickAddNewContact10ActionsPage,
-                                    AddNewContact10ActionsPage, ClickLogoutButtonActionPage)
+                                    AddNewContact1ActionsPage, ClickAddNewContact2ActionsPage, )
 
 
 @pytest.fixture(scope="module")
 def driver_setup():
     chrome_options = Options()
     # Uncomment the line below to run in headless mode
-    # chrome_options.add_argument("--headless")  # Run Chrome in headless mode
+    # chrome_options.add_argument("--headless")  # Run Edge in headless mode
     # chrome_options.add_argument("--disable-gpu")  # Optional: Disable GPU acceleration
-    driver = webdriver.Chrome(options=chrome_options)
+    driver = webdriver.Edge(options=chrome_options)
     driver.implicitly_wait(20)
     driver.maximize_window()
     yield driver
     driver.quit()
+
 
 @pytest.fixture(scope="module")
 def login(driver_setup):
@@ -86,7 +75,7 @@ def test_click_add_contact2_icon(login1):
 
 def test_Add_New_Contact2_Details(login1):
     contact2_details = AddNewContact2ActionsPage(login1.driver)
-    contact2_details.fill_contact2_firstname(Config.FILL_CONTACT2_FIRST_NAME)
+    contact2_details.fill_contact1_firstname(Config.FILL_CONTACT2_FIRST_NAME)
     contact2_details.fill_contact2_lastname(Config.FILL_CONTACT2_LAST_NAME)
     contact2_details.fill_contact2_birthdate(Config.FILL_CONTACT2_BIRTHDATE)
     contact2_details.fill_contact2_email(Config.FILL_CONTACT2_EMAIL)
